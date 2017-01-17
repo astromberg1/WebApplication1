@@ -39,7 +39,7 @@ Storlek
 
         public DateTime tilltrade { get; set; }
 
-
+        public DateTime MyProperty { get; set; }
 
 
         }
