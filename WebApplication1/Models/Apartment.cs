@@ -6,23 +6,15 @@ using System.Web;
 namespace WebApplication1.Models
     {
 
-    
+
         public class Apartment
         {
-        Område
-Adress
-Byggår
-Storlek
-   Senrop.Yta
-      Våning
-      Hyra
-        Hiss
-         Tillträde
+
         public Guid ID { get; set; }
 
         public  string omrade { get; set; }
 
-        public string adress { get; set; }
+        public string Gatuadress { get; set; }
 
 
         public int byggar { get; set; }
@@ -39,8 +31,19 @@ Storlek
 
         public DateTime tilltrade { get; set; }
 
-        public DateTime MyProperty { get; set; }
+        public DateTime skapad { get; set; }
 
+        public DateTime uppdaterad { get; set; }
+
+        public string upplagdav { get; set; }
+
+        public Apartment()
+            {
+            this.ID = Guid.NewGuid();
+
+            }
 
         }
+
+
     }
